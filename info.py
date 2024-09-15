@@ -15,21 +15,21 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6165486744:AAFW3C6588558QbLWfRD_-ddGAWAfY')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5397984467').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/biisal")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-10019494867581'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001547162655'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001234567898').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001547162655').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://username:password@cluster0.jhvfd.mongodb.net/?retryWrites=true&w=majority")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001949498981'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001547162655)
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/4dad0cc16f190468454ee.jpg')
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002031180571'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001547162655'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001905670346'))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
@@ -53,7 +53,7 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '-1001734959916')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002174393042')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001816697837'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1001944498981')
